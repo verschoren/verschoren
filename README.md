@@ -4,7 +4,7 @@ Hi there, I'm Thomas,<br>
 Problem solver with a passion for Apple sitting behind a Zendesk.
 
 # Projects
-<table>
+<table style="border-collapse: collapse">
 <tr>
   <td style="width:50%" valign="top">
     <a href="https://verschoren.com" target="_blank"><img width="300px" src="verschoren.png"></a><br>
