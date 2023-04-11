@@ -4,8 +4,8 @@ Hi there, I'm Thomas,<br>
 Problem solver with a passion for Apple sitting behind a Zendesk.
 
 # Projects
-<table style="border-collapse: collapse">
-<tr>
+<table style="border: none;">
+<tr style="border:none;">
   <td style="width:50%;border:none;" valign="top">
     <a href="https://verschoren.com" target="_blank"><img width="100%" src="verschoren.png"></a><br>
     My personal blog
