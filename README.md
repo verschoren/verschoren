@@ -15,6 +15,9 @@ Problem solver with a passion for Apple sitting behind a Zendesk.
   </tr>
 </table>
 
+# My Work
+See [https://verschoren.com/projects](https://verschoren.com/projects)
+
 # Recent Blog Posts
 * [Improve Your Content Discoverability with a Linked List in Zendesk Guide](https://internalnote.com/linked-list-for-guide/)
 * [Expanded API Support via Custom Authentication for Zendesk Webhooks](https://internalnote.com/custom-authentication-for-webhooks-update/)
@@ -23,3 +26,4 @@ Problem solver with a passion for Apple sitting behind a Zendesk.
 * [Cleaning up Zendesk Organisations with a sidebar app](https://internalnote.com/cleaning-up-organisations-with-a-sidebar-app/)
 
 # Recent Code Samples
+See below.
