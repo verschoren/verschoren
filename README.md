@@ -1,4 +1,4 @@
-Hi there, I'm Thomas,<br>
+### Hi there, I'm Thomas
 Problem solver with a passion for Apple sitting behind a Zendesk.
 
 # Projects
