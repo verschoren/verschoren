@@ -9,3 +9,5 @@ Problem solver with a passion for Apple sitting behind a Zendesk.
   A blog about Zendesk
 
 ## Recent Blog Posts
+
+## Recent Code Samples
