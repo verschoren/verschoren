@@ -6,12 +6,12 @@ require 'octokit'
 url = "https://internalnote.com"
 response = HTTParty.get(url)
 parsed_page = Nokogiri::HTML(response.body)
-posts = parsed_page.css('.gh-card-link')
+posts = parsed_page.css('.gh-card.post')
 
 # Generate the updated blog posts list (top 5)
 posts_list = ["\n## Recent Blog Posts\n\n"]
 posts.first(5).each do |post|
-  title = post.css('.gh-card-link').text.strip
+  title = post.css('.gh-card-title').text.strip
   link = "https://internalnote.com#{post.at_css('a')[:href]}"
   posts_list << "* [#{title}](#{link})"
 end
