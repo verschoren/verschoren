@@ -3,7 +3,7 @@ require 'nokogiri'
 require 'octokit'
 
 # Scrape blog posts from the website
-url = "https://www.bengreenberg.dev/blog/"
+url = "https://internalnote.com"
 response = HTTParty.get(url)
 parsed_page = Nokogiri::HTML(response.body)
 posts = parsed_page.css('.flex.flex-col.rounded-lg.shadow-lg.overflow-hidden')
@@ -12,7 +12,7 @@ posts = parsed_page.css('.flex.flex-col.rounded-lg.shadow-lg.overflow-hidden')
 posts_list = ["\n## Recent Blog Posts\n\n"]
 posts.first(5).each do |post|
   title = post.css('p.text-xl.font-semibold.text-gray-900').text.strip
-  link = "https://www.bengreenberg.dev#{post.at_css('a')[:href]}"
+  link = "https://internalnote.com#{post.at_css('a')[:href]}"
   posts_list << "* [#{title}](#{link})"
 end
 
