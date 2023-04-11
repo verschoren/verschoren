@@ -1,5 +1,3 @@
-![](banner.png)
-
 Hi there, I'm Thomas,<br>
 Problem solver with a passion for Apple sitting behind a Zendesk.
 
