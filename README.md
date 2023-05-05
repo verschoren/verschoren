@@ -24,6 +24,3 @@ See [https://verschoren.com/projects](https://verschoren.com/projects)
 * [Deep-dive into What's New for Zendesk in March 2023](https://internalnote.com/whats-new-march-2023/)
 * [Monthly Note for March 2023](https://internalnote.com/link-list-for-march-2023/)
 * [Cleaning up Zendesk Organisations with a sidebar app](https://internalnote.com/cleaning-up-organisations-with-a-sidebar-app/)
-
-# Recent Code Samples
-See below.
