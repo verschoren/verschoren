@@ -71,9 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
         setImageSrc(firstSetImageElements[4], uniqueNumbers[4]);
 
         // Second set of images (middle three images of the first set)
-        setImageSrc(secondSetImageElements[0], uniqueNumbers[2]);
-        setImageSrc(secondSetImageElements[1], uniqueNumbers[3]);
-        setImageSrc(secondSetImageElements[2], uniqueNumbers[4]);
+        setImageSrc(secondSetImageElements[0], uniqueNumbers[1]);
+        setImageSrc(secondSetImageElements[1], uniqueNumbers[2]);
+        setImageSrc(secondSetImageElements[2], uniqueNumbers[3]);
     }
 
     // Initial load of images
@@ -81,5 +81,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Set intervals for changing passion and refreshing images
     setInterval(changePassion, 5000);
-    setInterval(refreshImages, 5000);
+    setInterval(refreshImages, 8000);
 });
