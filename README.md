@@ -16,7 +16,7 @@ Problem solver with a passion for Apple sitting behind a Zendesk.
 </table>
 
 # My Work
-See [https://verschoren.com/projects](https://verschoren.com/projects)
+See [https://verschoren.com](https://verschoren.com)
 
 # Recent Blog Posts
 * [Improve Your Content Discoverability with a Linked List in Zendesk Guide](https://internalnote.com/linked-list-for-guide/)

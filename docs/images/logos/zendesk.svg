@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>zendesk</title>
+    <g id="zendesk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#03363D" x="0" y="0" width="28" height="28"></rect>
+        <g id="Group" transform="translate(5.000000, 8.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <polygon id="Path" points="8 3 8 12 0 12"></polygon>
+            <path d="M8,0 C8,1.65685425 6.209139,3 4,3 C1.790861,3 0,1.65685425 0,0 L8,0 Z" id="Path"></path>
+            <polygon id="Path" points="10 9 10 0 18 0"></polygon>
+            <path d="M13.5172414,9.95017058 C13.258101,9.9469189 13.0322091,9.99051683 13,10.05 L14,10.05 C13.9851776,9.99173508 13.7695802,9.9471518 13.5172414,9.95017058 Z" id="Path"></path>
+            <path d="M14,9 C11.7907226,9.00035435 10,10.3433963 10,12 L18,12 C18.0002269,11.2044095 17.5788998,10.4413462 16.8287297,9.87871857 C16.0785595,9.31609098 15.0610142,9 14,9 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
