@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lineElement.style.left = '0';
     lineElement.style.width = '0';  // Initial width
     lineElement.style.height = '5px';
-    lineElement.style.backgroundColor = 'rgb(250, 204, 21)'
+    lineElement.style.backgroundColor = 'rgb(250, 204, 21)';  // Tailwind text-yellow-400 color
     lineElement.style.zIndex = '1000';  // Make sure it's on top of everything
     lineElement.classList.add('transition-all', 'linear'); // Tailwind classes for transition
 
@@ -111,6 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1000);  // Keep the line full for 1 second
         }, 5000);  // 5000ms = 5s, which matches the duration
     }
+
+    // Load images immediately on DOMContentLoaded
+    refreshImages();
 
     // Start the initial animation
     animateLineAndRefresh();
