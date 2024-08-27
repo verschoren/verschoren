@@ -24,6 +24,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const passionElement = document.getElementById('passion');
     let index = Math.floor(Math.random() * passions.length); // Random initial index
 
+    // Create and style the line element (assuming you will add the div in index.html)
+    const lineElement = document.createElement('div');
+    lineElement.style.position = 'fixed';
+    lineElement.style.top = '0';
+    lineElement.style.left = '0';
+    lineElement.style.width = '0';  // Initial width
+    lineElement.style.height = '5px';
+    lineElement.style.backgroundColor = 'rgb(250, 204, 21)'
+    lineElement.style.zIndex = '1000';  // Make sure it's on top of everything
+    lineElement.classList.add('transition-all', 'linear'); // Tailwind classes for transition
+
+    // Append the line element to the body
+    document.body.appendChild(lineElement);
+
     // Set initial passion text
     passionElement.textContent = passions[index];
 
@@ -76,10 +90,31 @@ document.addEventListener('DOMContentLoaded', () => {
         setImageSrc(secondSetImageElements[2], uniqueNumbers[3]);
     }
 
-    // Initial load of images
-    refreshImages();
+    // Function to animate the line and trigger refresh
+    function animateLineAndRefresh() {
+        lineElement.style.transitionDuration = '5s';  // Adjust to match the interval
+        lineElement.style.width = '100%';  // Expand the line to full width
 
-    // Set intervals for changing passion and refreshing images
-    setInterval(changePassion, 5000);
-    setInterval(refreshImages, 8000);
+        // When the animation ends, keep the line full for 1 second, then refresh images and passion, reset the line
+        setTimeout(() => {
+            setTimeout(() => {
+                refreshImages();
+                changePassion();
+                lineElement.style.transitionDuration = '0s';  // Remove the transition temporarily
+                lineElement.style.width = '0';  // Reset the line width
+
+                // Start the animation again after resetting
+                setTimeout(() => {
+                    lineElement.style.transitionDuration = '5s';  // Reapply the transition
+                    lineElement.style.width = '100%';  // Start the line animation again
+                }, 50);  // Small delay to allow the reset to take effect
+            }, 1000);  // Keep the line full for 1 second
+        }, 5000);  // 5000ms = 5s, which matches the duration
+    }
+
+    // Start the initial animation
+    animateLineAndRefresh();
+
+    // Set interval to repeat the animation
+    setInterval(animateLineAndRefresh, 6000);  // Repeat every 6 seconds
 });
