@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
                               <a class="relative block py-2 transition font-bold hover:text-amber-500 dark:hover:text-amber-400" href="/projects">Projects</a>
                             </li>
                             <li>
+                              <a class="relative block py-2 transition font-bold hover:text-amber-500 dark:hover:text-amber-400" href="/appearances">Appearances</a>
+                            </li>
+                            <li>
                               <a
                                 class="relative flex items-center gap-1 py-2 transition font-bold text-blue-600 hover:text-blue-700 dark:text-blue-600 dark:hover:text-blue-500"
                                 target="_blank"
