@@ -27,11 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create and style the line element (assuming you will add the div in index.html)
     const lineElement = document.createElement('div');
     lineElement.style.position = 'fixed';
-    lineElement.style.top = '0';
+    lineElement.style.top = '5px';
     lineElement.style.left = '0';
     lineElement.style.width = '0';  // Initial width
     lineElement.style.height = '5px';
-    lineElement.style.backgroundColor = '#F97316';  // Tailwind text-orange-500 color
+    lineElement.style.backgroundColor = 'rgb(249 115 22)';  // Tailwind text-orange-500 color
     lineElement.style.zIndex = '1000';  // Make sure it's on top of everything
     lineElement.classList.add('transition-all', 'linear'); // Tailwind classes for transition
 

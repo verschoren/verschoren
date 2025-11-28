@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create a new header element
     const header = document.createElement('header');
     const footer = document.createElement('footer');
-
-    header.innerHTML = `
+    
+    header_nav = `
     <header class="relative z-50 flex flex-col" style="height: var(--header-height); margin-bottom: var(--header-mb)">
           <div class="order-last mt-[calc(--spacing(16)-(--spacing(3)))]"></div>
           <div class="sm:px-8 top-0 order-last -mb-3 pt-3" style="position: var(--header-position)">
@@ -60,15 +60,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         </a>
                         <a href="https://internalnote.com" class="text-blue-600 hover:text-blue-800">
                           <span class="sr-only">Mail</span>
-<svg class="h-6 w-6 transition group-hover:fill-zinc-900 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="internalnote_black-apple" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(50.000000, 91.000000)" fill="currentColor" fill-rule="nonzero">
-            <g id="Path" transform="translate(0.000000, -0.000000)">
-                <path d="M42.8923444,237.888494 C42.8923444,264.992274 64.9052444,287.010649 91.9888667,287.010649 L321.011133,287.010649 C348.071811,287.010649 370.084711,264.992274 370.084711,237.888494 L370.084711,92.1023178 C370.084711,64.9985383 348.071811,42.9571936 321.011133,42.9571936 L91.9888667,42.9571936 C64.9052444,42.9571936 42.8923444,64.9985383 42.8923444,92.1023178 C42.8923444,92.1023178 42.8923444,121.356024 42.8923444,142.460221 C65.1714,142.460221 139.167233,142.460221 180.889411,142.460221 L180.889411,103.600752 L285.295811,163.968678 L180.884822,224.244728 L180.884822,185.422009 L0,185.422009 L0,92.1023178 C0,41.3217791 41.2632889,0 91.9888667,0 L321.011133,0 C371.722944,0 413,41.3217791 413,92.1023178 L413,237.888494 C413,288.664439 371.722944,330 321.011133,330 L91.9888667,330 C41.2632889,330 0,288.664439 0,237.888494 L42.8923444,237.888494 Z"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+                          <svg class="h-6 w-6 transition group-hover:fill-zinc-900 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="internalnote_black-apple" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                  <g id="Group" transform="translate(50.000000, 91.000000)" fill="currentColor" fill-rule="nonzero">
+                                      <g id="Path" transform="translate(0.000000, -0.000000)">
+                                          <path d="M42.8923444,237.888494 C42.8923444,264.992274 64.9052444,287.010649 91.9888667,287.010649 L321.011133,287.010649 C348.071811,287.010649 370.084711,264.992274 370.084711,237.888494 L370.084711,92.1023178 C370.084711,64.9985383 348.071811,42.9571936 321.011133,42.9571936 L91.9888667,42.9571936 C64.9052444,42.9571936 42.8923444,64.9985383 42.8923444,92.1023178 C42.8923444,92.1023178 42.8923444,121.356024 42.8923444,142.460221 C65.1714,142.460221 139.167233,142.460221 180.889411,142.460221 L180.889411,103.600752 L285.295811,163.968678 L180.884822,224.244728 L180.884822,185.422009 L0,185.422009 L0,92.1023178 C0,41.3217791 41.2632889,0 91.9888667,0 L321.011133,0 C371.722944,0 413,41.3217791 413,92.1023178 L413,237.888494 C413,288.664439 371.722944,330 321.011133,330 L91.9888667,330 C41.2632889,330 0,288.664439 0,237.888494 L42.8923444,237.888494 Z"></path>
+                                      </g>
+                                  </g>
+                              </g>
+                          </svg>
                         </a>
                       </div>
                     </div>
@@ -79,6 +79,18 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </header>
     `
+
+    header_bar = `
+      <div class="fixed h-[5px] bg-orange-500 w-full"></div>
+    `;
+
+    const currentPath = document.location.pathname;
+    if (currentPath === '/') {
+      header.innerHTML = header_nav;
+    } else {
+      header.innerHTML = header_bar + header_nav;  
+    }
+
     footer.innerHTML = `
     <footer class="mt-32">
           <div class="sm:px-8">
@@ -123,7 +135,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.appendChild(footer);
     }
 
-    const currentPath = document.location.pathname;
     const navLinks = document.querySelectorAll('.transition.font-bold');
 
         // Iterate over each link to check if it matches the current path
