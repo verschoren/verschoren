@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lineElement.style.left = '0';
     lineElement.style.width = '0';  // Initial width
     lineElement.style.height = '5px';
-    lineElement.style.backgroundColor = 'rgb(250, 204, 21)';  // Tailwind text-orange-500 color
+    lineElement.style.backgroundColor = '#F97316';  // Tailwind text-orange-500 color
     lineElement.style.zIndex = '1000';  // Make sure it's on top of everything
     lineElement.classList.add('transition-all', 'linear'); // Tailwind classes for transition
 
