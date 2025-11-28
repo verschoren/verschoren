@@ -5,18 +5,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     header.innerHTML = `
     <header class="relative z-50 flex flex-col" style="height: var(--header-height); margin-bottom: var(--header-mb)">
-          <div class="order-last mt-[calc(theme(spacing.16)-theme(spacing.3))]"></div>
+          <div class="order-last mt-[calc(--spacing(16)-(--spacing(3)))]"></div>
           <div class="sm:px-8 top-0 order-last -mb-3 pt-3" style="position: var(--header-position)">
             <div class="mx-auto max-w-7xl lg:px-8">
               <div class="relative px-4 sm:px-8 lg:px-12">
                 <div class="mx-auto max-w-2xl lg:max-w-5xl">
-                  <div class="top-[var(--avatar-top,theme(spacing.3))] w-full" style="position: var(--header-inner-position)"></div>
+                  <div class="top-(--avatar-top,--spacing(3)) w-full" style="position: var(--header-inner-position)"></div>
                 </div>
               </div>
             </div>
           </div>
           <div class="top-0 z-10 h-16 pt-6" style="position: var(--header-position)">
-            <div class="sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full" style="position: var(--header-inner-position)">
+            <div class="sm:px-8 top-(--header-top,--spacing(6)) w-full" style="position: var(--header-inner-position)">
               <div class="mx-auto max-w-7xl lg:px-8">
                 <div class="relative px-4 sm:px-8 lg:px-12">
                   <div class="mx-auto max-w-2xl lg:max-w-5xl">
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"></path>
                           </svg>
                         </a>
-                        <a href="https://internalnote.com" class="text-gray-400 hover:text-gray-500">
+                        <a href="https://internalnote.com" class="text-blue-600 hover:text-blue-800">
                           <span class="sr-only">Mail</span>
 <svg class="h-6 w-6 transition group-hover:fill-zinc-900 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="internalnote_black-apple" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
