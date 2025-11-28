@@ -31,26 +31,16 @@ document.addEventListener('DOMContentLoaded', function() {
                         <nav class="pointer-events-auto md:block">
                           <ul class="gap-4 first-letter:justify-center w-full flex rounded-full text-sm font-medium text-zinc-800 dark:text-zinc-200">
                             <li>
-                              <a class="relative block py-2 transition font-bold hover:text-amber-500 dark:hover:text-amber-400" href="/about">About</a>
+                              <a class="relative block py-2 transition font-bold hover:text-orange-500 dark:hover:text-orange-500" href="/about">About</a>
                             </li>
                             <li>
-                              <a class="relative block py-2 transition font-bold hover:text-amber-500 dark:hover:text-amber-400" href="/experience">Experience</a>
+                              <a class="relative block py-2 transition font-bold hover:text-orange-500 dark:hover:text-orange-500" href="/experience">Experience</a>
                             </li>
                             <li>
-                              <a class="relative block py-2 transition font-bold hover:text-amber-500 dark:hover:text-amber-400" href="/projects">Projects</a>
+                              <a class="relative block py-2 transition font-bold hover:text-orange-500 dark:hover:text-orange-500" href="/projects">Projects</a>
                             </li>
                             <li>
-                              <a class="relative block py-2 transition font-bold hover:text-amber-500 dark:hover:text-amber-400" href="/appearances">Appearances</a>
-                            </li>
-                            <li>
-                              <a
-                                class="relative flex items-center gap-1 py-2 transition font-bold text-blue-600 hover:text-blue-700 dark:text-blue-600 dark:hover:text-blue-500"
-                                target="_blank"
-                                href="https://internalnote.com?utm_source=verschoren.com"
-                              >
-                                <img alt="internalnote logo" src="/images/logos/internalnote_small.svg" width="512" height="512" decoding="async" data-nimg="1" class="h-6 w-6" loading="lazy" style="color: transparent" />
-                                <span>Internal&nbsp;Note</span>
-                              </a>
+                              <a class="relative block py-2 transition font-bold hover:text-orange-500 dark:hover:text-orange-500" href="/appearances">Appearances</a>
                             </li>
                           </ul>
                         </nav>
@@ -99,8 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
                   <div class="mx-auto max-w-2xl lg:max-w-5xl">
                     <div class="flex flex-col items-center justify-between gap-6 sm:flex-row mb-4">
                       <div class="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                        <a class="transition hover:text-yellow-500 dark:hover:text-yellow-400" href="/privacy">Privacy</a>
-                        <a class="transition hover:text-yellow-500 dark:hover:text-yellow-400" href="/values">Values</a>
+                        <a class="transition hover:text-orange-500 dark:hover:text-orange-500" href="/privacy">Privacy</a>
+                        <a class="transition hover:text-orange-500 dark:hover:text-orange-500" href="/values">Values</a>
                       </div>
                     </div>
                     <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
@@ -145,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
           // Compare the href with the current path
           if (currentPath.includes(href)) {
             // Set text color to amber-500 for the matched link
-              link.classList.add('text-amber-500', 'dark:text-amber-400');
+              link.classList.add('text-orange-500', 'dark:text-orange-500');
           }
       });
 });
