@@ -21,6 +21,9 @@ module.exports = {
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
     },
+    fontFamily: {
+      sans: ['ui-rounded', 'system-ui', 'sans-serif'],
+    },
     typography: (theme) => ({
       invert: {
         css: {
@@ -176,7 +179,7 @@ module.exports = {
             lineHeight: theme('lineHeight.6'),
             marginTop: theme('spacing.3'),
           },
-          'figcaption > p': {
+          'figcaption> p': {
             margin: 0,
           },
 
@@ -199,10 +202,10 @@ module.exports = {
             fontSize: theme('fontSize.sm')[0],
             fontWeight: theme('fontWeight.semibold'),
           },
-          'ol > li::marker': {
+          'ol> li::marker': {
             color: 'var(--tw-prose-counters)',
           },
-          'ul > li::marker': {
+          'ul> li::marker': {
             color: 'var(--tw-prose-bullets)',
           },
           'li :is(ol, ul)': {
@@ -300,6 +303,6 @@ module.exports = {
           },
         },
       },
-    }),
+    })
   },
 }
