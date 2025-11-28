@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
                       <p class="text-sm text-zinc-400 dark:text-zinc-500">
                         © 2012 -
                         <!-- -->
-                        2024
+                        2025
                         <!-- -->
                         Thomas Verschoren. All rights reserved.
                       </p>
